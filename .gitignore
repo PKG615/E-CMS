@@ -1,19 +1,15 @@
-# ==========================================
-# CMS Frontend - Git Ignore
-# ==========================================
-
-# Environment files
-.env
-.env.*
-!.env.example
-
-# Node dependencies
+# Dependencies
 node_modules/
 
 # Build output
 dist/
 build/
-.vite/
+
+# Environment / local configuration
+.env
+.env.local
+.env.*.local
+*.local
 
 # Logs
 npm-debug.log*
@@ -42,9 +38,6 @@ Thumbs.db
 *.temp
 *.swp
 *.swo
-
-# Local configuration
-*.local
 
 # TypeScript build info
 *.tsbuildinfo

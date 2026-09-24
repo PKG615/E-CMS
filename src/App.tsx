@@ -58,7 +58,7 @@ function CmsApp() {
   if (!user || !isAdmin) return <Login />;
 
   const exitToStorefront = () => {
-    window.location.href = import.meta.env.VITE_STOREFRONT_URL || 'http://127.0.0.1:5173';
+    window.location.href = import.meta.env.VITE_STOREFRONT_URL || window.location.origin;
   };
 
   return (
